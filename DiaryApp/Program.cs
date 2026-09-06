@@ -9,7 +9,6 @@ builder.Services.AddDbContext<ApplicationDbContext>(options=>options.UseSqlServe
 //7. Подключил контекст БД (класс ApplicationDbContext) в Program.cs. В методе AddDbContext указываю, что буду использовать SQL Server и передаю строку подключения из appsettings.json.
 //Ну интелисенс, ну голова! 
 
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

@@ -17,8 +17,11 @@ namespace DiaryApp.Models
         //10 пункт в файле DiaryEntriesController
         //11 пункт в файле DiaryEntriesController
         //12 пункт в файле DiaryEntriesController
+        //13 пункт в файле DiaryEntriesController
+        //14 пункт в файле DiaryEntriesController
         public int Id { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Enter a title")]
+        [StringLength(100, MinimumLength = 3, ErrorMessage = "Title must be between 2 and 100 symbols")]
         public string Title { get; set; } = string.Empty;
         [Required]
         public string Content { get; set; } = string.Empty;
